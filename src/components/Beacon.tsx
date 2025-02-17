@@ -2,9 +2,9 @@ import { useRef } from 'react';
 import { useMount, useSingleton, useUnmount } from '@gilbarbara/hooks';
 import is from 'is-lite';
 
-import { getReactNodeText } from '~/modules/helpers';
+import { getReactNodeText } from '../modules/helpers';
+import { BeaconProps } from '../types';
 
-import { BeaconProps } from '~/types';
 
 export default function JoyrideBeacon(props: BeaconProps) {
   const {

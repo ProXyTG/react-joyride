@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 
-import { BeaconRenderProps } from '~/types';
+import { BeaconRenderProps } from '../../src/types';
 
 const BeaconComponent = forwardRef<HTMLButtonElement, BeaconRenderProps>((_, ref) => {
   return (

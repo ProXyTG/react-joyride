@@ -2,10 +2,10 @@ import { Props as FloaterProps } from 'react-floater';
 import deepEqual from '@gilbarbara/deep-equal';
 import is from 'is-lite';
 
-import { ACTIONS, LIFECYCLE, STATUS } from '~/literals';
-import { getMergedStep } from '~/modules/step';
+import { ACTIONS, LIFECYCLE, STATUS } from '../literals';
+import { Origin, Props, State, Status, Step, StoreHelpers } from '../types';
 
-import { Origin, Props, State, Status, Step, StoreHelpers } from '~/types';
+import { getMergedStep } from './step';
 
 type Listener = (state: State) => void;
 type PopperData = Parameters<NonNullable<FloaterProps['getPopper']>>[0];

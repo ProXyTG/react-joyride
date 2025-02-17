@@ -1,9 +1,8 @@
 import { useMount, useSetState, useUnmount } from '@gilbarbara/hooks';
 import is from 'is-lite';
 
-import { PORTAL_ELEMENT_ID } from '~/literals';
-
-import { SelectorOrElement } from '~/types';
+import { PORTAL_ELEMENT_ID } from '../literals';
+import { SelectorOrElement } from '../types';
 
 interface State {
   element: HTMLElement | null;

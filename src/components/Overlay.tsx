@@ -2,7 +2,7 @@ import { CSSProperties, useCallback, useEffect, useMemo, useRef } from 'react';
 import { useIsMounted, useMount, useSetState, useUnmount } from '@gilbarbara/hooks';
 import useTreeChanges from 'tree-changes-hook';
 
-import { LIFECYCLE } from '~/literals';
+import { LIFECYCLE } from '../literals';
 import {
   getClientRect,
   getDocumentHeight,
@@ -11,10 +11,9 @@ import {
   getScrollParent,
   hasCustomScrollParent,
   hasPosition,
-} from '~/modules/dom';
-import { getBrowser, isLegacy, log } from '~/modules/helpers';
-
-import { Lifecycle, OverlayProps } from '~/types';
+} from '../modules/dom';
+import { getBrowser, isLegacy, log } from '../modules/helpers';
+import { Lifecycle, OverlayProps } from '../types';
 
 import Spotlight from './Spotlight';
 

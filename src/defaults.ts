@@ -1,7 +1,6 @@
-import { ACTIONS, LIFECYCLE, STATUS } from '~/literals';
-import { noop } from '~/modules/helpers';
-
-import { FloaterProps, Locale, Props, State, Step } from '~/types';
+import { ACTIONS, LIFECYCLE, STATUS } from './literals/index';
+import { noop } from './modules/helpers';
+import { FloaterProps, Locale, Props, State, Step } from './types';
 
 export const defaultFloaterProps: Omit<FloaterProps, 'component'> = {
   modifiers: {

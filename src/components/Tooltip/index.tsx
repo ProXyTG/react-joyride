@@ -1,8 +1,7 @@
 import { MouseEvent } from 'react';
 
-import { getReactNodeText, replaceLocaleContent } from '~/modules/helpers';
-
-import { TooltipProps } from '~/types';
+import { getReactNodeText, replaceLocaleContent } from '../../modules/helpers';
+import { TooltipProps } from '../../types';
 
 import Container from './Container';
 

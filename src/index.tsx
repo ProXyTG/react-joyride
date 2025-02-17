@@ -1,19 +1,17 @@
 import { ReactNode, useEffect, useMemo } from 'react';
 import { useSingleton } from '@gilbarbara/hooks';
 
-import { defaultProps } from '~/defaults';
-import { LIFECYCLE, STATUS } from '~/literals';
-import { canUseDOM } from '~/modules/dom';
-import { log, mergeProps } from '~/modules/helpers';
-import { getMergedStep } from '~/modules/step';
-import useJoyrideData from '~/modules/useJoyrideData';
-import { usePortalElement } from '~/modules/usePortalElement';
-
-import Overlay from '~/components/Overlay';
-import Portal from '~/components/Portal';
-import Step from '~/components/Step';
-
-import { Props } from '~/types';
+import Overlay from './components/Overlay';
+import Portal from './components/Portal';
+import Step from './components/Step';
+import { defaultProps } from './defaults';
+import { LIFECYCLE, STATUS } from './literals';
+import { canUseDOM } from './modules/dom';
+import { log, mergeProps } from './modules/helpers';
+import { getMergedStep } from './modules/step';
+import useJoyrideData from './modules/useJoyrideData';
+import { usePortalElement } from './modules/usePortalElement';
+import { Props } from './types';
 
 export function Joyride(props: Props) {
   const mergedProps = mergeProps(defaultProps, props);

@@ -11,8 +11,10 @@ import {
 import is from 'is-lite';
 import useTreeChanges from 'tree-changes-hook';
 
-import { defaultProps } from '~/defaults';
-import { ACTIONS, EVENTS, LIFECYCLE, STATUS } from '~/literals';
+import { defaultProps } from '../defaults';
+import { ACTIONS, EVENTS, LIFECYCLE, STATUS } from '../literals';
+import { Actions, Props, State, Status } from '../types';
+
 import {
   getElement,
   getScrollParent,
@@ -20,12 +22,10 @@ import {
   hasCustomScrollParent,
   isElementVisible,
   scrollTo,
-} from '~/modules/dom';
-import { hideBeacon, log, mergeProps, shouldScroll } from '~/modules/helpers';
-import { getMergedStep, validateSteps } from '~/modules/step';
-import createStore from '~/modules/store';
-
-import { Actions, Props, State, Status } from '~/types';
+} from './dom';
+import { hideBeacon, log, mergeProps, shouldScroll } from './helpers';
+import { getMergedStep, validateSteps } from './step';
+import createStore from './store';
 
 export default function useJoyrideData(
   props: ReturnType<typeof mergeProps<typeof defaultProps, Props>>,

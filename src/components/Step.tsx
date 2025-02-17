@@ -4,13 +4,12 @@ import { useMount, useUnmount } from '@gilbarbara/hooks';
 import is from 'is-lite';
 import useTreeChanges from 'tree-changes-hook';
 
-import { LIFECYCLE, PORTAL_ELEMENT_ID } from '~/literals';
-import { getElement } from '~/modules/dom';
-import { log } from '~/modules/helpers';
-import Scope from '~/modules/scope';
-import { validateStep } from '~/modules/step';
-
-import { StepProps } from '~/types';
+import { LIFECYCLE, PORTAL_ELEMENT_ID } from '../literals';
+import { getElement } from '../modules/dom';
+import { log } from '../modules/helpers';
+import Scope from '../modules/scope';
+import { validateStep } from '../modules/step';
+import { StepProps } from '../types';
 
 import Beacon from './Beacon';
 import Tooltip from './Tooltip/index';

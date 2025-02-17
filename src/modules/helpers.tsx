@@ -3,9 +3,8 @@ import innerText from 'react-innertext';
 import { PlainObject, Simplify } from '@gilbarbara/types';
 import is from 'is-lite';
 
-import { ACTIONS, LIFECYCLE } from '~/literals';
-
-import { Actions, AnyObject, Lifecycle, NarrowPlainObject, State, Step } from '~/types';
+import { ACTIONS, LIFECYCLE } from '../literals';
+import { Actions, AnyObject, Lifecycle, NarrowPlainObject, State, Step } from '../types';
 
 import { hasPosition } from './dom';
 

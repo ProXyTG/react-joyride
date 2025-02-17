@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
 
-import { getReactNodeText } from '~/modules/helpers';
-
-import { TooltipRenderProps } from '~/types';
+import { getReactNodeText } from '../../modules/helpers';
+import { TooltipRenderProps } from '../../types';
 
 import CloseButton from './CloseButton';
 
